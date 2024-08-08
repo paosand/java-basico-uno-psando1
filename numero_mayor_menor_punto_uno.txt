@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class taller_java_puntouno {
+    public static void main(String[] args) {
+
+        // declaracion de variables
+
+        int a;
+        int b;
+        int c;
+
+        // Introduzca tres valores distintos
+        System.out.println("****Introduzca tres valores distintos****");
+
+        // Inicializar, leer y almacenar los valores en las variables A,B y C
+        // Inicializar, leer y almacenar los valores en la variable A
+        System.out.println("Ingrese un numero para (A)");
+        Scanner scannervalorA = new Scanner(System.in);
+        a = scannervalorA.nextInt();
+
+        // Inicializar, leer y almacenar los valores en la variable B
+        System.out.println("Ingrese un numero para (B)");
+        Scanner scannervalorB = new Scanner(System.in);
+        b = scannervalorB.nextInt();
+
+        // Inicializar, leer y almacenar los valores en la variable C
+        System.out.println("Ingrese un numero para (C)");
+        Scanner scannervalorC = new Scanner(System.in);
+        c = scannervalorC.nextInt();
+
+        // Si A = B se despliega el mensaje de alerta de “Ingreso un valor repetido”
+        if (a == b) {
+            System.out.println("Ingreso un valor repetido");
+        }
+
+        // Volver al paso 2
+        else if (a == c){
+                System.out.println("Ingreso un valor repetido");
+            }
+        // volve al paso 2
+        else if (b == c){
+            System.out.println("Ingreso un valor repetido");
+        }
+// Determinar el valor mayor
+        if (a > b && a > c){
+            System.out.println(a + "***es el valor mayor***");
+        }
+        else if (b > a && b > c){
+            System.out.println(b + "***es el valor mayor***");
+        }
+        else{
+            System.out.println(c + "***es el valor mayor***");
+        }
+// Determinar el valor menor
+        if (a < b && a < c){
+            System.out.println(a + "***es el menor valor***");
+        }
+        else if (b < a && b < c){
+            System.out.println(b + "***es el menor valor***");
+        }
+        else{
+            System.out.println(c + "***es el menor valor***");
+        }
+    }
+}
